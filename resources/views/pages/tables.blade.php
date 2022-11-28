@@ -5,124 +5,125 @@
   <div class="col-md-12">
     <div class="card ">
       <div class="card-header">
-        <h4 class="card-title"> Simple Table</h4>
+        <h4 class="card-title">Contacta a un experto</h4>
       </div>
+      {{-- Se modifico --}}
       <div class="card-body">
         <div class="table-responsive">
           <table class="table tablesorter " id="">
             <thead class=" text-primary">
               <tr>
                 <th>
-                  Name
+                  Nombre
                 </th>
                 <th>
-                  Country
+                  Estado
                 </th>
                 <th>
-                  City
+                  Ciudad
                 </th>
                 <th class="text-center">
-                  Salary
+                  Contacto
                 </th>
               </tr>
             </thead>
             <tbody>
               <tr>
                 <td>
-                  Dakota Rice
+                  Alejandro Sandoval
                 </td>
                 <td>
-                  Niger
+                  Jalisco
                 </td>
                 <td>
-                  Oud-Turnhout
+                  Guadalajara
                 </td>
                 <td class="text-center">
-                  $36,738
+                  33-34-66-14-51
                 </td>
               </tr>
               <tr>
                 <td>
-                  Minerva Hooper
+                  Josue Saavedra
                 </td>
                 <td>
-                  Curaçao
+                  Sinaloa
                 </td>
                 <td>
-                  Sinaai-Waas
+                  Mazatlan
                 </td>
                 <td class="text-center">
-                  $23,789
+                  386-103-31-70
                 </td>
               </tr>
               <tr>
                 <td>
-                  Sage Rodriguez
+                  Marlon Angel
                 </td>
                 <td>
-                  Netherlands
+                  Chiapas
                 </td>
                 <td>
-                  Baileux
+                  Tlaxpa Gutierrez
                 </td>
                 <td class="text-center">
-                  $56,142
+                  33-13-56-11-25
                 </td>
               </tr>
               <tr>
                 <td>
-                  Philip Chaney
+                  Luis Camarena
                 </td>
                 <td>
-                  Korea, South
+                  Puebla
                 </td>
                 <td>
-                  Overland Park
+                  Tehuacan
                 </td>
                 <td class="text-center">
-                  $38,735
+                  356-123-54-79
                 </td>
               </tr>
               <tr>
                 <td>
-                  Doris Greene
+                  Jonathan Diaz
                 </td>
                 <td>
-                  Malawi
+                  Puebla
                 </td>
                 <td>
-                  Feldkirchen in Kärnten
+                  Atlixco
                 </td>
                 <td class="text-center">
-                  $63,542
+                  356-86-35-09
                 </td>
               </tr>
               <tr>
                 <td>
-                  Mason Porter
+                  Emmanuel Ruiz
                 </td>
                 <td>
-                  Chile
+                  Jalisco
                 </td>
                 <td>
-                  Gloucester
+                  Zapopan
                 </td>
                 <td class="text-center">
-                  $78,615
+                  33-90-78-45-76
                 </td>
               </tr>
               <tr>
                 <td>
-                  Jon Porter
+                  Pedro Lopez
                 </td>
                 <td>
-                  Portugal
+                  Hidalgo
                 </td>
                 <td>
-                  Gloucester
+                  Pachuca
                 </td>
                 <td class="text-center">
-                  $98,615
+                  9754-09-13-56
                 </td>
               </tr>
             </tbody>
@@ -134,8 +135,8 @@
   <div class="col-md-12">
     <div class="card  card-plain">
       <div class="card-header">
-        <h4 class="card-title"> Table on Plain Background</h4>
-        <p class="category"> Here is a subtitle for this table</p>
+        <h4 class="card-title"> Instituciones de apoyo</h4>
+        <p class="category"> Clinicas</p>
       </div>
       <div class="card-body">
         <div class="table-responsive">
@@ -143,116 +144,102 @@
             <thead class=" text-primary">
               <tr>
                 <th>
-                  Name
+                  Nombre
                 </th>
                 <th>
-                  Country
+                  Estado
                 </th>
                 <th>
-                  City
+                  Ciudad
                 </th>
                 <th class="text-center">
-                  Salary
+                  Contacto
                 </th>
               </tr>
             </thead>
             <tbody>
               <tr>
                 <td>
-                  Dakota Rice
+                  Astronauta Emocional
                 </td>
                 <td>
-                  Niger
+                  Distrito Federal
                 </td>
                 <td>
-                  Oud-Turnhout
+                  Ciudad de México
                 </td>
                 <td class="text-center">
-                  $36,738
+                  52-45-76-73-12
                 </td>
               </tr>
               <tr>
                 <td>
-                  Minerva Hooper
+                  Neopraxis - Comunidad De Psicólogos
                 </td>
                 <td>
-                  Curaçao
+                  Distrito Federal
                 </td>
                 <td>
-                  Sinaai-Waas
+                  Ciudad de México
                 </td>
                 <td class="text-center">
-                  $23,789
+                  52-56-12-12-76
                 </td>
               </tr>
               <tr>
                 <td>
-                  Sage Rodriguez
+                  Athva Clínica De Depresión Y Ansiedad
                 </td>
                 <td>
-                  Netherlands
+                  Online
                 </td>
                 <td>
-                  Baileux
+                  Online
                 </td>
                 <td class="text-center">
-                  $56,142
+                  33-56-89-92-12
                 </td>
               </tr>
               <tr>
                 <td>
-                  Philip Chaney
+                  Zaragoza Consultores
                 </td>
                 <td>
-                  Korea, South
+                  Ciudad de México
                 </td>
                 <td>
-                  Overland Park
+                  Iztapalapa
                 </td>
                 <td class="text-center">
-                  $38,735
+                  567-23-16-76-87
                 </td>
               </tr>
               <tr>
                 <td>
-                  Doris Greene
+                  Ecos Emocionales
                 </td>
                 <td>
-                  Malawi
+                  Ciudad de México
                 </td>
                 <td>
-                  Feldkirchen in Kärnten
+                  Juárez
                 </td>
                 <td class="text-center">
-                  $63,542
+                  52-54-34-87-32
                 </td>
               </tr>
               <tr>
                 <td>
-                  Mason Porter
+                  Interven
                 </td>
                 <td>
-                  Chile
+                  Ciudad de México
                 </td>
                 <td>
-                  Gloucester
+                  Coyoacán
                 </td>
                 <td class="text-center">
-                  $78,615
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  Jon Porter
-                </td>
-                <td>
-                  Portugal
-                </td>
-                <td>
-                  Gloucester
-                </td>
-                <td class="text-center">
-                  $98,615
+                  52-445-09-00-12
                 </td>
               </tr>
             </tbody>
@@ -263,3 +250,4 @@
   </div>
 </div>
 @endsection
+

@@ -18,16 +18,16 @@
                     ID
                   </th>
                   <th>
-                    Name
+                    Nombre
                   </th>
                   <th>
-                    Country
+                    Estado
                   </th>
                   <th>
-                    City
+                    Ciudad
                   </th>
                   <th>
-                    Salary
+                    Contacto
                   </th>
                 </thead>
                 <tbody>
@@ -153,16 +153,16 @@
                     ID
                   </th>
                   <th>
-                    Name
+                    Nombre
                   </th>
                   <th>
-                    Country
+                    Estado
                   </th>
                   <th>
-                    City
+                    Ciudad
                   </th>
                   <th>
-                    Salary
+                    Contacto
                   </th>
                 </thead>
                 <tbody>

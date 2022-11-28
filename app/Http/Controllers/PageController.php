@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
+use App\Models\Envio;
 
 class PageController extends Controller
 {
@@ -72,5 +73,17 @@ class PageController extends Controller
     public function upgrade()
     {
         return view('pages.upgrade');
+    }
+    public function Historial()
+    {
+        // traer la data y mandar a la pagina
+        $envios = Envio::all();
+        $data = [];
+        foreach($envios as $envio) { 
+            $data['label'][]=$envio->mes;
+            $data['data'][]=$envio->cantidad;
+        }
+        $data['data']=json_encode($data);
+        return view('pages.historial',$data);
     }
 }
