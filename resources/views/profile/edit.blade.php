@@ -1,106 +1,67 @@
-@extends('layouts.app', ['page' => __('User Profile'), 'pageSlug' => 'profile'])
+@extends('layouts.app', ['pageSlug' => 'dashboard'])
 
 @section('content')
     <div class="row">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">
-                    <h5 class="title">{{ _('Edit Profile') }}</h5>
-                </div>
-                <form method="post" action="{{ route('profile.update') }}" autocomplete="off">
-                    <div class="card-body">
-                            @csrf
-                            @method('put')
-
-                            @include('alerts.success')
-
-                            <div class="form-group{{ $errors->has('name') ? ' has-danger' : '' }}">
-                                <label>{{ _('Name') }}</label>
-                                <input type="text" name="name" class="form-control{{ $errors->has('name') ? ' is-invalid' : '' }}" placeholder="{{ _('Name') }}" value="{{ old('name', auth()->user()->name) }}">
-                                @include('alerts.feedback', ['field' => 'name'])
-                            </div>
-
-                            <div class="form-group{{ $errors->has('email') ? ' has-danger' : '' }}">
-                                <label>{{ _('Email address') }}</label>
-                                <input type="email" name="email" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" placeholder="{{ _('Email address') }}" value="{{ old('email', auth()->user()->email) }}">
-                                @include('alerts.feedback', ['field' => 'email'])
-                            </div>
-                    </div>
-                    <div class="card-footer">
-                        <button type="submit" class="btn btn-fill btn-primary">{{ _('Save') }}</button>
-                    </div>
-                </form>
-            </div>
-
-            <div class="card">
-                <div class="card-header">
-                    <h5 class="title">{{ _('Password') }}</h5>
-                </div>
-                <form method="post" action="{{ route('profile.password') }}" autocomplete="off">
-                    <div class="card-body">
-                        @csrf
-                        @method('put')
-
-                        @include('alerts.success', ['key' => 'password_status'])
-
-                        <div class="form-group{{ $errors->has('old_password') ? ' has-danger' : '' }}">
-                            <label>{{ __('Current Password') }}</label>
-                            <input type="password" name="old_password" class="form-control{{ $errors->has('old_password') ? ' is-invalid' : '' }}" placeholder="{{ __('Current Password') }}" value="" required>
-                            @include('alerts.feedback', ['field' => 'old_password'])
+        <div class="col-12">
+            <div class="card card-chart">
+                <div class="card-header ">
+                    <div class="row">
+                        <div class="col-sm-6 text-left">
+                            <h5 class="card-category">Mood Diary</h5>
+                            <h2 class="card-title">Tips Diarios</h2>
                         </div>
-
-                        <div class="form-group{{ $errors->has('password') ? ' has-danger' : '' }}">
-                            <label>{{ __('New Password') }}</label>
-                            <input type="password" name="password" class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}" placeholder="{{ __('New Password') }}" value="" required>
-                            @include('alerts.feedback', ['field' => 'password'])
-                        </div>
-                        <div class="form-group">
-                            <label>{{ __('Confirm New Password') }}</label>
-                            <input type="password" name="password_confirmation" class="form-control" placeholder="{{ __('Confirm New Password') }}" value="" required>
-                        </div>
-                    </div>
-                    <div class="card-footer">
-                        <button type="submit" class="btn btn-fill btn-primary">{{ _('Change password') }}</button>
-                    </div>
-                </form>
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div class="card card-user">
-                <div class="card-body">
-                    <p class="card-text">
-                        <div class="author">
-                            <div class="block block-one"></div>
-                            <div class="block block-two"></div>
-                            <div class="block block-three"></div>
-                            <div class="block block-four"></div>
-                            <a href="#">
-                                <img class="avatar" src="{{ asset('white') }}/img/emilyz.jpg" alt="">
-                                <h5 class="title">{{ auth()->user()->name }}</h5>
-                            </a>
-                            <p class="description">
-                                {{ _('Ceo/Co-Founder') }}
-                            </p>
-                        </div>
-                    </p>
-                    <div class="card-description">
-                        {{ _('Do not be scared of the truth because we need to restart the human foundation in truth And I love you like Kanye loves Kanye I love Rick Owens’ bed design but the back is...') }}
+                        
                     </div>
                 </div>
-                <div class="card-footer">
-                    <div class="button-container">
-                        <button class="btn btn-icon btn-round btn-facebook">
-                            <i class="fab fa-facebook"></i>
-                        </button>
-                        <button class="btn btn-icon btn-round btn-twitter">
-                            <i class="fab fa-twitter"></i>
-                        </button>
-                        <button class="btn btn-icon btn-round btn-google">
-                            <i class="fab fa-google-plus"></i>
-                        </button>
-                    </div>
-                </div>
+                <i class="tim-icons icon-bulb-63"> Tip 1</i><br><br>
+                        <p class="description">
+                            Sé consciente de cómo te sientes. Cuando tengas una emoción negativa,<br>
+                            como el enfado, intenta ponerle un nombre a lo que sientes. <br>
+                            Por ejemplo: <br>
+                            ¡Ese muchacho de mi grupo de estudio, Ian, me vuelve loco! <br>
+                            Me pongo tan celoso cuando veo a ese muchacho/esa muchacha con mi ex. <br>
+                            Cada vez que paso cerca de esos matones, siento miedo. <br>
+                        </p><hr>
+
+                        <i class="tim-icons icon-bulb-63"> Tip 2</i><br><br>
+                        <p class="description">
+                            No niegues lo que sientes. Es posible que no desees contarles a otras personas sobre tus 
+                            sentimientos. <br>
+                            Pero no reprimas totalmente tus sentimientos. <br> 
+                            Simplemente ponerles un nombre es mucho <br>
+                            mejor que hacer de cuenta que no existen (o explotar sin pensarlo).
+                        </p><hr>
+
+                        <i class="tim-icons icon-bulb-63"> Tip 3</i><br><br>
+                        <p class="description">
+                            Acepta todas tus emociones como naturales y comprensibles. <br>
+                            No te juzgues por las emociones que sientes. Es normal que las sientas. <br>
+                            Reconocer cómo te sientes puede ayudarte a superarlo; por lo tanto, no seas tan duro contigo.<br>
+                        </p><hr>
+
+                        <i class="tim-icons icon-bulb-63"> Tip 4</i><br><br>
+                        <p class="description">
+                            Busca apoyo. Habla sobre cómo te sientes con tus padres, con un adulto en quien confíes o con un amigo. <br>
+                            Ellos pueden ayudarte a analizar tus emociones y darte un punto de vista diferente de las cosas. <br>
+                            Y nada te ayudará a sentirte más comprendido y cuidado que el apoyo de alguien que te quiere por quien eres. <br>
+                        </p><hr>
+
+                        <i class="tim-icons icon-bulb-63"> Tip 5</i><br><br>
+                        <p class="description">
+                            Ejercicio físico. La actividad física ayuda al cerebro a producir sustancias químicas naturales que favorecen el estado de ánimo positivo. <br>
+                            El ejercicio físico también puede aliviar el estrés acumulado y ayudarte a no quedarte encerrado en los sentimientos negativos. <br>
+                        </p><hr>
+
             </div>
         </div>
     </div>
 @endsection
+
+@push('js')
+    <script src="{{ asset('white') }}/js/plugins/chartjs.min.js"></script>
+    <script>
+        $(document).ready(function() {
+          demo.initDashboardPageCharts();
+        });
+    </script>
+@endpush

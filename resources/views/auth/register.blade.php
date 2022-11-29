@@ -5,34 +5,37 @@
         <div class="col-md-5 ml-auto">
             <div class="info-area info-horizontal mt-5">
                 <div class="icon icon-warning">
-                    <i class="tim-icons icon-wifi"></i>
+                    <i class="tim-icons icon-light-3"></i>
                 </div>
                 <div class="description">
-                    <h3 class="info-title">{{ _('Marketing') }}</h3>
+                    <h3 class="info-title">{{ _('Dato Curioso I') }}</h3>
                     <p class="description">
-                        {{ _('We\'ve created the marketing campaign of the website. It was a very interesting collaboration.') }}
+                        {{ _('Las emociones negativas son muy difíciles de fingir.
+                              Probablemente, hemos fingido una sonrisa más de una vez, pero la tristeza es más complicada, porque incluye componentes diferentes en todos nosotros.') }}
                     </p>
                 </div>
             </div>
             <div class="info-area info-horizontal">
                 <div class="icon icon-primary">
-                    <i class="tim-icons icon-triangle-right-17"></i>
+                    <i class="tim-icons icon-light-3"></i>
                 </div>
                 <div class="description">
-                    <h3 class="info-title">{{ _('Fully Coded in HTML5') }}</h3>
+                    <h3 class="info-title">{{ _('Dato Curioso II') }}</h3>
                     <p class="description">
-                        {{ _('We\'ve developed the website with HTML5 and CSS3. The client has access to the code using GitHub.') }}
+                        {{ _('Los científicos han descubierto que una noche de sueño profundo puede ayudar a sobrellevar las recuerdos traumáticas.
+                                Esto se debe a que mientras dormimos decrece la cantidad de hormonas relacionadas con el estrés.') }}
                     </p>
                 </div>
             </div>
             <div class="info-area info-horizontal">
                 <div class="icon icon-info">
-                    <i class="tim-icons icon-trophy"></i>
+                    <i class="tim-icons icon-light-3"></i>
                 </div>
                 <div class="description">
-                    <h3 class="info-title">{{ _('Built Audience') }}</h3>
+                    <h3 class="info-title">{{ _('Dato Curioso III') }}</h3>
                     <p class="description">
-                        {{ _('There is also a Fully Customizable CMS Admin Dashboard for this product.') }}
+                        {{ _('Los científicos han demostrado que cuando se muestra a una persona una imagen de alguien lastimando a otro, o haciendo algo malo, la parte del cerebro 
+                                que se activa es la de las emociones, mucho antes que la moral.') }}
                     </p>
                 </div>
             </div>
@@ -59,7 +62,7 @@
                                     <i class="tim-icons icon-single-02"></i>
                                 </div>
                             </div>
-                            <input type="text" name="name" class="form-control{{ $errors->has('name') ? ' is-invalid' : '' }}" placeholder="{{ _('Name') }}" value="{{ old('name') }}">
+                            <input type="text" name="name" class="form-control{{ $errors->has('name') ? ' is-invalid' : '' }}" placeholder="{{ _('Nombre') }}" value="{{ old('name') }}">
                             @include('alerts.feedback', ['field' => 'name'])
                         </div>
                         <div class="input-group{{ $errors->has('email') ? ' has-danger' : '' }}">
@@ -68,7 +71,7 @@
                                     <i class="tim-icons icon-email-85"></i>
                                 </div>
                             </div>
-                            <input type="email" name="email" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" placeholder="{{ _('Email') }}" value="{{ old('email') }}">
+                            <input type="email" name="email" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" placeholder="{{ _('Correo Electronico') }}" value="{{ old('email') }}">
                             @include('alerts.feedback', ['field' => 'email'])
                         </div>
                         <div class="input-group{{ $errors->has('password') ? ' has-danger' : '' }}">
@@ -77,7 +80,7 @@
                                     <i class="tim-icons icon-lock-circle"></i>
                                 </div>
                             </div>
-                            <input type="password" name="password" class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}" placeholder="{{ _('Password') }}">
+                            <input type="password" name="password" class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}" placeholder="{{ _('Contraseña') }}">
                             @include('alerts.feedback', ['field' => 'password'])
                         </div>
                         <div class="input-group">
@@ -86,14 +89,14 @@
                                     <i class="tim-icons icon-lock-circle"></i>
                                 </div>
                             </div>
-                            <input type="password" name="password_confirmation" class="form-control" placeholder="{{ _('Confirm Password') }}">
+                            <input type="password" name="password_confirmation" class="form-control" placeholder="{{ _('Confirma Contraseña') }}">
                         </div>
                         <div class="form-check text-left {{ $errors->has('password') ? ' has-danger' : '' }}">
                             <label class="form-check-label">
                                 <input class="form-check-input {{ $errors->has('agree_terms_and_conditions') ? ' is-invalid' : '' }}" name="agree_terms_and_conditions"  type="checkbox"  {{ old('agree_terms_and_conditions') ? 'checked' : '' }}>
                                 <span class="form-check-sign"></span>
-                                {{ _('I agree to the') }}
-                                <a href="#">{{ _('terms and conditions') }}</a>.
+                                {{ _('Acepto') }}
+                                <a href="#">{{ _('terminos y condiciones') }}</a>.
                                 @include('alerts.feedback', ['field' => 'agree_terms_and_conditions'])
                             </label>
                         </div>
