@@ -5,34 +5,37 @@
         <div class="col-md-5 ml-auto">
             <div class="info-area info-horizontal mt-5">
                 <div class="icon icon-warning">
-                    <i class="tim-icons icon-wifi"></i>
+                    <i class="tim-icons icon-light-3"></i>
                 </div>
                 <div class="description">
-                    <h3 class="info-title">{{ _('Marketing') }}</h3>
+                    <h3 class="info-title">{{ _('Dato Curioso I') }}</h3>
                     <p class="description">
-                        {{ _('We\'ve created the marketing campaign of the website. It was a very interesting collaboration.') }}
+                        {{ _('Las emociones negativas son muy difíciles de fingir.
+                              Probablemente, hemos fingido una sonrisa más de una vez, pero la tristeza es más complicada, porque incluye componentes diferentes en todos nosotros.') }}
                     </p>
                 </div>
             </div>
             <div class="info-area info-horizontal">
                 <div class="icon icon-primary">
-                    <i class="tim-icons icon-triangle-right-17"></i>
+                    <i class="tim-icons icon-light-3"></i>
                 </div>
                 <div class="description">
-                    <h3 class="info-title">{{ _('Fully Coded in HTML5') }}</h3>
+                    <h3 class="info-title">{{ _('Dato Curioso II') }}</h3>
                     <p class="description">
-                        {{ _('We\'ve developed the website with HTML5 and CSS3. The client has access to the code using GitHub.') }}
+                        {{ _('Los científicos han descubierto que una noche de sueño profundo puede ayudar a sobrellevar las recuerdos traumáticas.
+                                Esto se debe a que mientras dormimos decrece la cantidad de hormonas relacionadas con el estrés.') }}
                     </p>
                 </div>
             </div>
             <div class="info-area info-horizontal">
                 <div class="icon icon-info">
-                    <i class="tim-icons icon-trophy"></i>
+                    <i class="tim-icons icon-light-3"></i>
                 </div>
                 <div class="description">
-                    <h3 class="info-title">{{ _('Built Audience') }}</h3>
+                    <h3 class="info-title">{{ _('Dato Curioso III') }}</h3>
                     <p class="description">
-                        {{ _('There is also a Fully Customizable CMS Admin Dashboard for this product.') }}
+                        {{ _('Los científicos han demostrado que cuando se muestra a una persona una imagen de alguien lastimando a otro, o haciendo algo malo, la parte del cerebro 
+                                que se activa es la de las emociones, mucho antes que la moral.') }}
                     </p>
                 </div>
             </div>
