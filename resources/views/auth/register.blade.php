@@ -62,7 +62,7 @@
                                     <i class="tim-icons icon-single-02"></i>
                                 </div>
                             </div>
-                            <input type="text" name="name" class="form-control{{ $errors->has('name') ? ' is-invalid' : '' }}" placeholder="{{ _('Name') }}" value="{{ old('name') }}">
+                            <input type="text" name="name" class="form-control{{ $errors->has('name') ? ' is-invalid' : '' }}" placeholder="{{ _('Nombre') }}" value="{{ old('name') }}">
                             @include('alerts.feedback', ['field' => 'name'])
                         </div>
                         <div class="input-group{{ $errors->has('email') ? ' has-danger' : '' }}">
@@ -71,7 +71,7 @@
                                     <i class="tim-icons icon-email-85"></i>
                                 </div>
                             </div>
-                            <input type="email" name="email" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" placeholder="{{ _('Email') }}" value="{{ old('email') }}">
+                            <input type="email" name="email" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" placeholder="{{ _('Correo Electronico') }}" value="{{ old('email') }}">
                             @include('alerts.feedback', ['field' => 'email'])
                         </div>
                         <div class="input-group{{ $errors->has('password') ? ' has-danger' : '' }}">
@@ -80,7 +80,7 @@
                                     <i class="tim-icons icon-lock-circle"></i>
                                 </div>
                             </div>
-                            <input type="password" name="password" class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}" placeholder="{{ _('Password') }}">
+                            <input type="password" name="password" class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}" placeholder="{{ _('Contraseña') }}">
                             @include('alerts.feedback', ['field' => 'password'])
                         </div>
                         <div class="input-group">
@@ -89,14 +89,14 @@
                                     <i class="tim-icons icon-lock-circle"></i>
                                 </div>
                             </div>
-                            <input type="password" name="password_confirmation" class="form-control" placeholder="{{ _('Confirm Password') }}">
+                            <input type="password" name="password_confirmation" class="form-control" placeholder="{{ _('Confirma Contraseña') }}">
                         </div>
                         <div class="form-check text-left {{ $errors->has('password') ? ' has-danger' : '' }}">
                             <label class="form-check-label">
                                 <input class="form-check-input {{ $errors->has('agree_terms_and_conditions') ? ' is-invalid' : '' }}" name="agree_terms_and_conditions"  type="checkbox"  {{ old('agree_terms_and_conditions') ? 'checked' : '' }}>
                                 <span class="form-check-sign"></span>
-                                {{ _('I agree to the') }}
-                                <a href="#">{{ _('terms and conditions') }}</a>.
+                                {{ _('Acepto') }}
+                                <a href="#">{{ _('terminos y condiciones') }}</a>.
                                 @include('alerts.feedback', ['field' => 'agree_terms_and_conditions'])
                             </label>
                         </div>
