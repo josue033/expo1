@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 use App\Models\Envio;
+use App\Models\Estado;
 
 class PageController extends Controller
 {
@@ -76,6 +77,8 @@ class PageController extends Controller
     }
     public function Historial()
     {
+        // $estados = Estado::orderByDesc('id')->get();
+        //return view('pages.historial', compact('estados'));
         // traer la data y mandar a la pagina
         $envios = Envio::all();
         $data = [];

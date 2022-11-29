@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\EstadoController;
 
 /*
 |--------------------------------------------------------------------------
@@ -41,4 +42,13 @@ Route::group(['middleware' => 'auth'], function () {
 	Route::put('profile', ['as' => 'profile.update', 'uses' => 'App\Http\Controllers\ProfileController@update']);
 	Route::put('profile/password', ['as' => 'profile.password', 'uses' => 'App\Http\Controllers\ProfileController@password']);
 });
+
+
+// Route::get('tarea/{tarea}/ver',[TareaController::class,'show'])->name('tarea.show');
+//Route::get('notifications',[EstadoController::class,'create'])->name('estado.create');
+Route::post('notification', [EstadoController::class, 'store'])->name('estado.store');
+// Route::get('historiales',[EstadoController::class,'index'])->name('estado.historial');
+// Route::get('tarea/{tarea}/editar',[TareaController::class,'edit'])->name('tarea.edit');
+// Route::put('tarea/{tarea}/actualizar',[TareaController::class,'update'])->name('tarea.update');
+// Route::delete('tarea/{tarea}/eliminar',[TareaController::class,'destroy'])->name('tarea.delete');
 
