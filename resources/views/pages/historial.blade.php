@@ -71,9 +71,35 @@
       <tr>
         <td>
             {{-- {{ $estado->estado_animo() }} --}}
+            Muy Feliz
+        </td>
+        <td>
+            {{-- {{ $estado->estado_animo() }} --}}
+            Neutral
+        </td>
+        <td>
+            {{-- {{ $estado->estado_animo() }} --}}
+            Palpitaciones
+        </td>
+        <td>
+            {{-- {{ $estado->estado_animo() }} --}}
+            Ganar un premio
+        </td>
+        <td>
+            {{-- {{ $estado->estado_animo() }} --}}
+            Soy muy bueno
+        </td>
+        <td>
+            {{-- {{ $estado->estado_animo() }} --}}
+            Agradable y empatico con los demas
+        </td>
+        <td>
+            {{-- {{ $estado->estado_animo() }} --}}
+            31-Diciembre-2022
         </td>
         <td>
             {{-- {{ $estado->emocion() }} --}}
+
         </td>
         <td>
             {{-- {{ $estado->reacciones() }} --}}
@@ -280,7 +306,7 @@ var marksData = {
       data: [75, 75, 70, 80, 60, 85]
     },
     {
-      label: "Steven",
+      label: "Estado.",
       backgroundColor: "#8E24AA44",
       borderColor: "black",
       borderWidth: 1,

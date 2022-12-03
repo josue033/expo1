@@ -14,8 +14,9 @@ class EstadoController extends Controller
      */
     public function index()
     {
-        // $estados = Estado::orderByDesc('id')->get();
-        // return view('estado.historiales', compact('estados'));
+        
+         $estados = Estado::all();
+         return view('estado.historial', compact('estados'));
     }
 
     /**
